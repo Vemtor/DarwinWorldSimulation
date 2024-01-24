@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.model.presenter.SimulationPresenter"
+            prefHeight="1000.0" prefWidth="1200.0">
+    <VBox alignment="CENTER" spacing="10">
+        <VBox fx:id="statisticsBox" spacing="5" alignment="CENTER_LEFT">
+            <Label text="Statistics" style="-fx-font-weight: bold;"/>
+            <Label fx:id="numberOfAnimalsLabel"/>
+            <Label fx:id="numberOfPlantsLabel"/>
+            <Label fx:id="freePositionsLabel"/>
+            <Label fx:id="mostPopularGenomeLabel"/>
+            <Label fx:id="averageAnimalsEnergyLabel"/>
+            <Label fx:id="averageAliveAnimalsLifeTimeLabel"/>
+            <Label fx:id="averageDeadAnimalsLifeTimeLabel"/>
+            <Label fx:id="averageKidsNumberLabel"/>
+        </VBox>
+        <VBox fx:id="animalStatisticsBox">
+            <Label text="Animal Statistics" style="-fx-font-weight: bold;"/>
+            <Label fx:id="animalGenomeLabel"/>
+            <Label fx:id="numDirectionLabel"/>
+            <Label fx:id="currentEnergyLabel"/>
+            <Label fx:id="kidNumberLabel"/>
+            <Label fx:id="daysAliveLabel"/>
+            <Label fx:id="deadDayLabel"/>
+        </VBox>
+    </VBox>
+    <VBox alignment="CENTER">
+        <GridPane fx:id="mapGrid" alignment="CENTER" gridLinesVisible="true">
+        </GridPane>
+        <Button fx:id="pauseButton" onAction="#pauseAndUnPauseSimulation" alignment="CENTER">Pause</Button>
+    </VBox>
+</HBox>

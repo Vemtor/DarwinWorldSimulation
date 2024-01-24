@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.model.presenter.SimulationStarter"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="10">
+        <HBox alignment="CENTER">
+            <Label text="Map Width:"/>
+            <TextField fx:id="mapWidthTextField" promptText="Enter Map Width" maxWidth="200.0" text="15"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Map Height:"/>
+            <TextField fx:id="mapHeightTextField" promptText="Enter Map Height" maxWidth="200.0" text="15"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Genotype Length:"/>
+            <TextField fx:id="genotypeLengthTextField" promptText="Enter Genotype Length" maxWidth="200.0" text="8"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Start Number of Animals:"/>
+            <TextField fx:id="startNumberOfAnimalsTextField" promptText="Enter Start Number of Animals" maxWidth="200.0" text="45"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Starting Energy:"/>
+            <TextField fx:id="startingEnergyTextField" promptText="Enter Starting Energy" maxWidth="200.0" text="5"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Energy Needed to Reproduce:"/>
+            <TextField fx:id="energyNeededToReproduceTextField" promptText="Enter Energy Needed to Reproduce" maxWidth="200.0" text="10"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Energy Loss on Breed:"/>
+            <TextField fx:id="energyLossOnBreedTextField" promptText="Enter Energy Loss on Breed" maxWidth="200.0" text="5"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Energy Loss on Move:"/>
+            <TextField fx:id="energyLossOnMoveTextField" promptText="Enter Energy Loss on Move" maxWidth="200.0" text="1"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Plant Energy:"/>
+            <TextField fx:id="plantEnergyTextField" promptText="Enter Plant Energy" maxWidth="200.0" text="3"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Number of Starting Plants:"/>
+            <TextField fx:id="numberOfStartingPlantsTextField" promptText="Enter Number of Starting Plants" maxWidth="200.0" text="10"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="New Plants per TIC:"/>
+            <TextField fx:id="newPlantsPerTicTextField" promptText="Enter New Plants per TIC" maxWidth="200.0" text="10"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Maximal gens to mutate"/>
+            <TextField fx:id="maximalGensToMutateField" promptText="Podaj min ilosc genow do mutacji" maxWidth="200.0" text="5"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Minimal gens to mutate"/>
+            <TextField fx:id="minimalGensToMutateField" promptText="Podaj min ilosc genow do mutacji" maxWidth="200.0" text="3"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Is Moving Jungle:"/>
+            <CheckBox fx:id="isMovingJungleCheckBox" text="Is Moving Jungle" maxWidth="200.0" selected="false"/>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Label text="Is Small Correct:"/>
+            <CheckBox fx:id="isSmallCorrectCheckBox" text="Is Small Correct" maxWidth="200.0" selected="false"/>
+        </HBox>
+
+        <Button onAction="#onStartClick">Start</Button>
+    </VBox>
+</VBox>
